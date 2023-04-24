@@ -8,16 +8,16 @@ const botao = document.getElementById('btn-1');
 
 //Recuperar uma lista de elementos com a função QuerySelectorAll
 
-// const seletores = document.querySelectorAll('li');
+const seletores = document.querySelectorAll('li');
 
-// seletores.forEach((item) =>{
-//     if (item.textContent == "Item-15") {
-//         let meuItem = item;
-//      // Usar sinal da crase e ${} é para melhorar a leitura do código
-//         console.log(`Items selecionado: ${meuItem.textContent}`);   
-//         meuItem.textContent = "Bom dia"
-//     }
-// })
+seletores.forEach((item) =>{
+    if (item.textContent == "Item-15") {
+        let meuItem = item;
+     // Usar sinal da crase e ${} é para melhorar a leitura do código
+        console.log(`Items selecionado: ${meuItem.textContent}`);   
+        meuItem.textContent = "Bom dia"
+    }
+})
 
 
 //Estudar:
