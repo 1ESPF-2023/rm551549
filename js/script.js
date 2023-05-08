@@ -27,6 +27,7 @@
 //Math.Ceil
 //Math.Random
 //Math.Floor
+//Math.round
 
 let tmp = "";
 
@@ -42,12 +43,11 @@ function mudaCor() {
 
     const cabecalho = document.querySelector(".cabecalho");
     cabecalho.style.backgroundColor = `rgb(${r},${g},${b})`;
-
-    const banner1 = document.querySelector('.banner-1');
-    banner1.style.backgroundColor = `rgb(${r},${g},${b})`
     
     tmp = setTimeout(mudaCor, 1000);
 }
 
+
 mudaCor();
+
 
