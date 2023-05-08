@@ -83,6 +83,28 @@ function mudaBanner() {
     nr = Math.ceil(Math.random() *3); 
     // imgElement2.src = "./img/banner-lateral-"+nr+".png";
     imgElement2.src = `./img/banner-lateral-${nr}.png`;
-    setTimeout(mudaBanner , 2000);
+
+    setTimeout(mudaBanner, 2000);
 }
 mudaBanner();   
+
+
+const button = document.querySelector("button");
+
+// buttons.forEach( (botao)=>{
+//   botao  
+// } );
+
+button.addEventListener("click", function(){
+    if(this.textContent == "LIGAR") {
+        const imgElement = document.querySelector("img[alt ='Lampada apagada']");
+        imgElement.src = "./img/pic_bulbon.gif";
+        imgElement.alt = "Lampada acesa";
+        this.textContent = "DESLIGAR";
+    }else{
+        const imgElement = document.querySelector("img[alt ='Lampada acesa']");
+        imgElement.src = "./img/pic_bulboff.gif";
+        imgElement.alt = "Lampada apagada";
+        this.textContent = "LIGAR";
+    }
+})
